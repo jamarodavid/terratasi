@@ -1,11 +1,15 @@
-import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Hero from "./sections/Hero";
 
 export default function App() {
   return (
     <>
-      <div className="pt=[4.75rem] lg:pt[5.25rem] overflow-hidden">
-        <Header />
-      </div>
+      <main className="">
+        <Nav />
+        <section className="px-[120px] py-36">
+          <Hero />
+        </section>
+      </main>
     </>
   );
 }

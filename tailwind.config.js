@@ -3,11 +3,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontSize: {
+        heading: "48px",
+      },
       colors: {
         color: {
           1: "#82DF85",
           2: "#1D4735",
           3: "#52154E",
+          "slate-gray": "#6D6D6D",
         },
         gradient: {
           1: "#B7DF82",
@@ -15,8 +19,11 @@ export default {
         },
       },
       fontFamily: {
-        sans: "var(--font-sans)",
-        serif: "var(--font-serif)",
+        poppins: "var(--font-poppins)",
+        lora: "var(--font-lora)",
+      },
+      screens: {
+        wide: "1440px",
       },
     },
   },
