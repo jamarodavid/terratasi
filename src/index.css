@@ -11,6 +11,12 @@
     color-scheme: dark;
 }
 
+*::selection {
+    background-color: #1D4735; 
+    color: #82DF85;
+}
+
+
 * {
     scroll-behavior: smooth;
 }
