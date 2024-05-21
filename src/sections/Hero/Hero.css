@@ -1,4 +1,4 @@
-button{
+button {
     position: relative;
     border: 0;
     display: inline-block;
@@ -9,19 +9,19 @@ button{
     background: transparent;
 }
 
-.text{
+.text {
     position: absolute;
     inset: 0;
-    padding: 0.9rem 0;
-    margin-left: 3rem;
+    padding: 1rem 0;
+    margin-left: 3.2rem;
     color: #1D4735;
     line-height: 1.1;
     text-align: center;
     transition: all 0.4s ease-in-out;
-
+    font-size: 14px;
 }
 
-.circle{
+.circle {
     position: relative;
     display: block;
     margin: 0;
@@ -33,7 +33,7 @@ button{
     z-index: 0;
 }
 
-.icon{
+.icon {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -41,7 +41,7 @@ button{
     background: #82DF85;
 }
 
-.arrow{
+.arrow {
     left: 0.605rem;
     width: 1.125rem;
     height: 0.125rem;
@@ -49,7 +49,7 @@ button{
     transition: all 0.4s ease-in-out;
 }
 
-.arrow::before{
+.arrow::before {
     content: "";
     position: absolute;
     top: -0.3rem;
@@ -61,16 +61,16 @@ button{
     transform: rotate(45deg);
 }
 
-button:hover .circle{
+button:hover .circle {
     width: 110%;
 }
 
-button:hover .arrow{
+button:hover .arrow {
     background: #82DF85;
     transform: translateX(1rem);
 }
 
-button:hover .text{
+button:hover .text {
     color: #82DF85;
 
 }
@@ -83,7 +83,8 @@ button:hover .text{
     cursor: pointer;
     transition: color 0.1s linear;
     z-index: 999;
-    position: relative; /* Menambahkan properti position */
+    position: relative;
+    /* Menambahkan properti position */
 }
 
 .btn:hover {
@@ -99,10 +100,12 @@ button:hover .text{
     background: #82DF85;
     z-index: -1;
     transition: transform 0.5s;
-    transform-origin: bottom; /* Atur titik transformasi ke bagian bawah */
+    transform-origin: bottom;
+    /* Atur titik transformasi ke bagian bawah */
     transition-timing-function: cubic-bezier(1.5, 1.6, 0.4, 0.7);
     position: absolute;
-    transform: scaleY(0); /* Mengatur awalnya menjadi tidak terlihat */
+    transform: scaleY(0);
+    /* Mengatur awalnya menjadi tidak terlihat */
 }
 
 .btn1::before {
@@ -114,5 +117,6 @@ button:hover .text{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-radius: 0px;
-    transform: scaleY(1); /* Mengubah ukuran dari 0 menjadi 1, naik dari bawah ke atas */
+    transform: scaleY(1);
+    /* Mengubah ukuran dari 0 menjadi 1, naik dari bawah ke atas */
 }

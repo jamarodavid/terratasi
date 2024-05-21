@@ -12,20 +12,22 @@
 }
 
 html ::-webkit-scrollbar-track {
-	background: transparent;
+    background: transparent;
 
 }
+
 html ::-webkit-scrollbar-thumb {
-	background: #82DF85;
-	border-radius: 10px;
+    background: #82DF85;
+    border-radius: 10px;
 }
+
 html ::-webkit-scrollbar {
-	width: 10px;
+    width: 10px;
 }
 
 
 *::selection {
-    background-color: #1D4735; 
+    background-color: #1D4735;
     color: #82DF85;
 }
 

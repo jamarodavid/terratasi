@@ -1,15 +1,17 @@
-import Nav from "./components/Nav";
-import Baout from "./sections/Baout";
-import Hero from "./sections/Hero";
+import NavBar from "./components/NavBar";
+import TrashTypes from "./sections/About/TrashTypes/TrashTypes";
+import Hero from "./sections/Hero/Hero";
 
 export default function App() {
   return (
     <>
       <main className="">
-        <Nav />
-        <section className="px-[120px] py-36">
+        <NavBar />
+        <section className="py-36 md:px-[120px]">
           <Hero />
-          <Baout />
+        </section>
+        <section className="md:px-[120px] px-12 py-36">
+          <TrashTypes />
         </section>
       </main>
     </>

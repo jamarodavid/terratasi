@@ -1,7 +1,7 @@
 import { terratasi } from "../assets";
 import { useNavigate } from 'react-router-dom'; 
 
-const Nav = () => {
+const   Nav = () => {
   const navigate = useNavigate();
   return (
     <header className="py-8 padding-x absolute z-10 w-full border-b-2 border-color-slate-gray">
