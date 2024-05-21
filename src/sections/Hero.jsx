@@ -19,7 +19,7 @@ const Hero = () => {
 				<p className="md:text-xl text-sm  w-1/2  text-center p-2 md:w-3/4 text-color-2 leading-normal font-poppins">
 					"TerraTasi" adalah sebuah platform daring yang bertujuan untuk
 					mengedukasi dan menginspirasi masyarakat tentang pentingnya menjaga
-					kebersihan lingkungan, terutama di tempat-tempat wisata di Nusantara.
+					kebersihan lingkungan, terutama di tempat-tempat wisata di Nusantara
 				</p>
 			</div>
 			<div className="flex justify-center">
