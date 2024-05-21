@@ -7,7 +7,7 @@ export default function App() {
     <>
       <main className="">
         <NavBar />
-        <section className="py-36 md:px-[120px]">
+        <section className="py-36 md:px-[40px] lg:px-[120px]">
           <Hero />
         </section>
         <section className="md:px-[120px] px-12 py-36">

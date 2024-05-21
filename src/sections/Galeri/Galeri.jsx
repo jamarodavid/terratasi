@@ -1,10 +1,10 @@
 import React from "react";
-import Nav2 from "../../components/Nav2";
+import SimpleNavbar from "../../components/SimpleNavbar";
 
 const Galeri = () => {
   return (
     <div>
-      <Nav2 />
+      <SimpleNavbar />
       <section className="px-[4rem] py-36">
         <p className="text-center font-poppins text-2xl text-color-1">
           G A L E R I

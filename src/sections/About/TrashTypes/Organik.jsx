@@ -1,10 +1,10 @@
 import React from "react";
-import Nav2 from "../../../components/Nav2";
+import SimpleNavbar from "../../../components/SimpleNavbar";
 
 const OrganikPage = () => {
   return (
     <div>
-      <Nav2 />
+      <SimpleNavbar />
       <section className="px-[4rem] py-24">
         <div className="">
           <div class="md:flex md:flex-row mt-12 ">
