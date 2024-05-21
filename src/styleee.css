@@ -1,0 +1,7 @@
+.gambar {
+	transition: all 0.4s;
+}
+
+.gambar:hover {
+	transform: scale(0.9) rotate(2deg);
+}
