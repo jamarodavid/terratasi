@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="bg-gradient-to-b from-gradient-1 to-gradient-2 rounded-[70px] py-14"
+      className="bg-gradient-to-b from-gradient-1 to-gradient-2 rounded-[70px] max-md:rounded-none py-16"
     >
       <div className="flex justify-center font-lora flex-col items-center gap-2">
         <h1 className="md:text-5xl text-4xl text-center text-color-2 font-semibold mb-4 md:w-11/12 w-10/12">
@@ -29,17 +29,23 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-5 grid-rows-1 gap-3 items-end px-12">
-        <div>
-          <img src={hero1} className="md:mb-4 mb-2" />
-          <img src={hero2} />
+      <div className="grid grid-cols-5 md:grid-cols-5 grid-rows-1 gap-3 items-end px-4 md:px-12 max-md:px-0">
+        <div className="flex flex-col gap-2 max-sm:gap-0">
+          <img
+            src={hero1}
+            className="md:mb-1 mb-2 w-full h-auto object-cover"
+          />
+          <img src={hero2} className="w-full h-auto object-cover" />
         </div>
-        <img src={hero3} />
-        <img src={hero4} />
-        <img src={hero5} />
-        <div>
-          <img src={hero6} className="md:mb-4 mb-2" />
-          <img src={hero7} />
+        <img src={hero3} className="w-full h-auto object-cover" />
+        <img src={hero4} className="w-full h-auto object-cover" />
+        <img src={hero5} className="w-full h-auto object-cover" />
+        <div className="flex flex-col gap-2 max-sm:gap-0">
+          <img
+            src={hero6}
+            className="md:mb-1 mb-2 w-full h-auto object-cover"
+          />
+          <img src={hero7} className="w-full h-auto object-cover" />
         </div>
       </div>
     </section>

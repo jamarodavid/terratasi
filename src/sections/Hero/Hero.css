@@ -82,7 +82,7 @@ button:hover .text {
     text-transform: uppercase;
     cursor: pointer;
     transition: color 0.1s linear;
-    z-index: 999;
+    z-index: 40;
     position: relative;
     /* Menambahkan properti position */
 }

@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -16,6 +18,7 @@ export default {
         gradient: {
           1: "#B7DF82",
           2: "#477948",
+          3: "#FFC800",
         },
       },
       fontFamily: {

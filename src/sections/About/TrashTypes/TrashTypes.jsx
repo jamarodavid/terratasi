@@ -4,12 +4,12 @@ import { useNavigate } from "react-router-dom";
 export default function TrashTypes() {
   const navigate = useNavigate();
   return (
-    <div className="pt-[10rem] font-poppins">
+    <div className="font-poppins">
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-between text-color-1">
         <div className="w-full mb-4 md:mb-0 grid grid-cols- md:grid-cols-1 gap-3">
           <div className="btn btn1 rounded-xl md:col-span-2">
             <div className="flex items-center my-11 justify-center">
-              <h2 className="font-semibold text-[4rem] text-center">
+              <h2 className="font-semibold text-[4rem]  text-center">
                 Kenali 3 Jenis Sampah
               </h2>
             </div>

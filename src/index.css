@@ -31,7 +31,6 @@ html ::-webkit-scrollbar {
     color: #82DF85;
 }
 
-
 * {
     scroll-behavior: smooth;
 }
