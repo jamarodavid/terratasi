@@ -67,7 +67,7 @@ const MyLineChart = () => {
 	return (
 		<div>
 			<Line data={data} options={options} />
-            <p className="font-semibold md:text-4xl text-2xl text-center text-color-1"><u><em> Rata-rata Timbulan Sampah di Indonesia 28.151.905 </em></u> <br /> Dan masih Belum Di Kelola Dengan Baik</p>
+            <p className="font-semibold font-poppins md:text-4xl text-2xl text-center text-color-1"><u><em> Rata-rata Timbulan Sampah di Indonesia 28.151.905 </em></u> <br /> Dan masih Belum Di Kelola Dengan Baik</p>
 		</div>
 	);
 };

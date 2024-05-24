@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import SimpleNavbar from "../../../components/SimpleNavbar";
 
 const OrganikPage = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <SimpleNavbar />
@@ -33,6 +35,20 @@ const OrganikPage = () => {
             mengurangi jumlah sampah yang masuk ke tempat pembuangan sampah.
           </p>
         </div>
+        <p className="pt-11 text-color-1 font-semibold font-lora text-4xl">Baca Lainnya</p>
+				<div className="grid py-11 md:grid-cols-2 grid-cols-1 gap-11 ">
+                <div onClick={() => navigate("/organik")} className="p-2 border-[5px] rounded-2xl border-[#82DF85] cursor-pointer ">
+                <div><img src="./src/assets/img/organik2.png" class="w-full mt-2 rounded-[20px] " alt="" /></div>
+                <p className="text-center text-color-1 font-semibold font-lora text-4xl">Sampah Organik</p>
+                </div>
+                <div onClick={() => navigate("/bahan")} className="p-2 border-[5px] rounded-2xl border-[#82DF85] cursor-pointer ">
+                <div><img src="./src/assets/img/bahan2.png" class="w-full mt-2  rounded-[20px] " alt="" /></div>
+                <p className="text-center text-color-1 font-semibold font-lora text-3xl">Bahan Berbahaya Dan <br />
+                Beracun (B3)</p>
+                </div>
+                
+                
+            </div>
       </section>
     </div>
   );

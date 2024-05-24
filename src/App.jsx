@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import MyLineChart from "./components/MyLineChart";
 import NavBar from "./components/NavBar";
 import FamousQuotes from "./sections/About/FamousQuotes/FamousQuotes";
@@ -36,6 +37,9 @@ export default function App() {
           <section className="mt-52">
             <Contact />
           </section>
+        </section>
+        <section>
+         <Footer />
         </section>
       </main>
     </>
