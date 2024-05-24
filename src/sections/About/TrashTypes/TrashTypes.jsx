@@ -56,6 +56,7 @@ export default function TrashTypes() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }

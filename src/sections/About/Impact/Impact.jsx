@@ -1,4 +1,5 @@
 import React from "react";
+import MyLineChart from "../../../components/MyLineChart";
 import YoutubePlayer from "../../../components/YoutubePlayer";
 
 const Impact = () => {
@@ -22,8 +23,10 @@ const Impact = () => {
           limbah sampah yang meningkat secara signifikan.
         </p>
 
-        <YoutubePlayer />
+        {/* <YoutubePlayer /> */}
       </div>
+      
+      
     </>
   );
 };
