@@ -1,10 +1,8 @@
-import React from "react";
-import MyLineChart from "../../../components/MyLineChart";
-import YoutubePlayer from "../../../components/YoutubePlayer";
+import React from 'react'
 
-const Impact = () => {
+const Footer = () => {
   return (
-    <>
+    <div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#B7DF82"
@@ -13,22 +11,12 @@ const Impact = () => {
         ></path>
       </svg>
       <div className="flex flex-col justify-center items-center bg-gradient-1 lg:px-[120px] md:px-[70px] px-12 py-36 font-poppins text-center text-color-2">
-        <h1 className="text-4xl font-semibold mb-4 w-full">
-          Dampak Dari Pembuangan Sampah Sembarangan
-        </h1>
-        <p className="text-base w-3/4">
-          Indonesia memiliki kekayaan alam yang luar biasa, mulai dari pantai
-          berpasir putih, hutan tropis yang rimbun, hingga gunung-gunung megah.
-          Namun, sayangnya, keindahan ini sering kali terancam oleh masalah
-          limbah sampah yang meningkat secara signifikan.
-        </p>
+        
 
-        {/* <YoutubePlayer /> */}
+        
       </div>
-      
-      
-    </>
-  );
-};
+    </div>
+  )
+}
 
-export default Impact;
+export default Footer
