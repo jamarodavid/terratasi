@@ -1,25 +1,48 @@
+import { useEffect, useState } from "react";
 import { terratasi } from "../assets";
-import { useNavigate } from "react-router-dom";
 
 const SimpleNavbar = () => {
-  const navigate = useNavigate();
+  const [navBg, setNavBg] = useState(false);
+
+  useEffect(() => {
+    const handleColor = () => {
+      if (window.scrollY >= 50) {
+        setNavBg(true);
+      } else {
+        setNavBg(false);
+      }
+    };
+    window.addEventListener("scroll", handleColor);
+
+    return () => {
+      window.removeEventListener("scroll", handleColor);
+    };
+  }, []);
   return (
-    <header className="py-8 padding-x absolute z-10 w-full border-b-2 border-color-slate-gray">
-      <div className="flex justify-between">
-        <nav className="flex gap-3">
+    <nav
+      className={`font-poppins z-50 top-0 start-0 fixed w-full border-gray-600 backdrop-blur-lg border-b`}
+    >
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={terratasi} alt="Logo" width={20} height={20} />
-          <h3 className="text-xl font-semibold font-poppins text-green-600">
-            Terratasi
-          </h3>
-        </nav>
-        <a
-          onClick={() => navigate("/")}
-          className=" cursor-pointer text-color-1 font-semibold text-xl"
-        >
-          Kembali
+          <span className="self-center text-2xl font-semibold whitespace-nowrap text-color-1">
+            TerraTasi
+          </span>
         </a>
+        <ul className="nav">
+          <li className="nav-item">
+            <a
+              href="/"
+              className={`${
+                navBg ? "text-white" : "text-color-slate-gray"
+              } hover:text-white`}
+            >
+              Kembali
+            </a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </nav>
   );
 };
 

@@ -72,11 +72,10 @@ button:hover .arrow {
 
 button:hover .text {
     color: #82DF85;
-
 }
 
 
-.btn {
+.trash-type-btn {
     background: none;
     border: 5px solid #82DF85;
     text-transform: uppercase;
@@ -87,12 +86,12 @@ button:hover .text {
     /* Menambahkan properti position */
 }
 
-.btn:hover {
+.trash-type-btn:hover {
     color: #1D4735;
     border-radius: 12px;
 }
 
-.btn::before {
+.trash-type-btn::before {
     border-radius: 1px;
     content: "";
     width: 100%;

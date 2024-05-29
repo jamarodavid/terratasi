@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Organik from "./sections/About/TrashTypes/Organik";
 import Anorganik from "./sections/About/TrashTypes/Anorganik";
 import Bahan from "./sections/About/TrashTypes/Bahan";
+import Galeri from "./sections/Galeri/Galeri.jsx";
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +17,8 @@ ReactDOM.render(
         <Route path="/organik" element={<Organik />} />
         <Route path="/anorganik" element={<Anorganik />} />
         <Route path="/bahan" element={<Bahan />} />
+        <Route path="/galeri" element={<Galeri />} />
+        
       </Routes>
     </Router>
   </React.StrictMode>,

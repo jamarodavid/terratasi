@@ -1,11 +1,11 @@
 import React from "react";
 import YouTube from "react-youtube";
+
 const YoutubePlayer = () => {
   // YOUTUBE VIDEO FUNCTION
   const opts = {
-    width: "1125px",
-    height: "571px", // Set height here if needed
-    borderRadius: "2.7rem",
+    maxWidth: "1125px",
+    borderRadius: "2rem",
     playerVars: { autoplay: 1 },
   };
   const videoReady = (event) => {
@@ -14,13 +14,12 @@ const YoutubePlayer = () => {
 
   return (
     <>
-      <h1>YouTube Player</h1>
       <div>
         <div
           style={{
-            maxWidth: "1125px",
+            maxWidth: "800px",
             margin: "auto",
-            marginTop: "30px",
+            marginTop: "12px",
             minHeight: "30vh",
             borderRadius: "12px",
             overflow: "hidden",

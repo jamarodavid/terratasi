@@ -64,15 +64,15 @@ html ::-webkit-scrollbar {
         @apply sm:pb-24 pb-12;
     }
 
-    ul li {
+    .nav .nav-item {
         @apply relative;
     }
 
-    ul li::after {
+    .nav .nav-item::after {
         @apply content-[''] bg-color-1 h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-200;
     }
 
-    ul li:hover::after {
+    .nav .nav-item:hover::after {
         @apply w-[100%];
     }
 }

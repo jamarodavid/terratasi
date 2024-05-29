@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { navigation } from "../constants"; // Asumsi ini adalah array objek navigasi
-import { terratasi } from "../assets"; // Asumsi ini adalah path logo
+import { navigation } from "../constants";
+import { terratasi } from "../assets";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -37,7 +37,7 @@ const NavBar = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={terratasi} alt="Logo" width={20} height={20} />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-color-1">
+          <span className="self-center text-2xl font-semibold whitespace-nowrap bg-gradient-to-r from-gradient-1 to-gradient-2 text-transparent bg-clip-text drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-gray-800/25">
             TerraTasi
           </span>
         </a>
@@ -72,9 +72,9 @@ const NavBar = () => {
           } md:flex items-center justify-between w-full md:w-auto md:order-1`}
           id="navbar-dropdown"
         >
-          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+          <ul className="nav flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
             {navigation.map((item) => (
-              <li key={item.id}>
+              <li key={item.id} className="nav-item">
                 <a
                   href={item.url}
                   className={`leading text-base text-color-slate-gray font-poppins font-normal lg:hover:text-white block ${
@@ -86,7 +86,7 @@ const NavBar = () => {
               </li>
             ))}
             <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-              <li>
+              <li className="nav-item">
                 <button
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
