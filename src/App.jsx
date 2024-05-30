@@ -17,11 +17,11 @@ export default function App() {
     <>
       <main className="relative">
         <NavBar />
-        <section className="mt-24 max-md:mt-16 md:px-[40px] lg:px-[120px]">
+        <section className="mt-24 max-md:mt-16 md:px-[40px] lg:px-[120px] container">
           <Hero />
         </section>
 
-        <section className="lg:px-[120px] md:px-[70px] px-12 py-36">
+        <section className="lg:px-[120px] md:px-[70px] px-12 py-36 container">
           <section>
             <Quotes />
           </section>
@@ -37,7 +37,7 @@ export default function App() {
           <Impact />
         </section>
 
-        <section className="lg:px-[120px] md:px-[70px] px-12 py-36">
+        <section className="lg:px-[120px] md:px-[70px] px-12 py-36 container">
           <section>
             <MyLineChart />
           </section>
@@ -45,12 +45,12 @@ export default function App() {
             <Faq />
           </section>
         </section>
-        
+
         <section className="mt-52">
           <Konservasi />
         </section>
 
-        <section className="lg:px-[120px] md:px-[70px] px-12 py-36">
+        <section className="lg:px-[120px] md:px-[70px] px-12 py-36 container">
           <section className="mt-52">
             <Contactt />
           </section>

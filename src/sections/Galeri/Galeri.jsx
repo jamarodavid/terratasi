@@ -32,10 +32,10 @@ const Galeri = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <SimpleNavbar />
       <section className="px-[4rem] py-36">
-      <motion.p
+        <motion.p
           className="text-center font-poppins text-2xl text-color-1"
           ref={ref}
           variants={containerVariants}

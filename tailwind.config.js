@@ -5,6 +5,13 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: 0,
+          lg: "135px",
+        },
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
