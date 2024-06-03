@@ -6,6 +6,7 @@ import FamousQuotes from "./sections/About/FamousQuotes/FamousQuotes";
 import Impact from "./sections/About/Impact/Impact";
 import Quotes from "./sections/About/Quotes/Quotes";
 import TrashTypes from "./sections/About/TrashTypes/TrashTypes";
+import Collaborate from "./sections/Collaborate/Collaborate";
 import Contact from "./sections/contact/Contact";
 import Contactt from "./sections/contact/Contactt";
 import Faq from "./sections/FAQ/Faq";
@@ -17,7 +18,7 @@ export default function App() {
     <>
       <main className="relative">
         <NavBar />
-        <section className="mt-24 max-md:mt-16 md:px-[40px] lg:px-[120px] container">
+        <section className="mt-24 max-md:mt-16 md:px-[40px] lg:px-[120px]">
           <Hero />
         </section>
 
@@ -37,7 +38,7 @@ export default function App() {
           <Impact />
         </section>
 
-        <section className="lg:px-[120px] md:px-[70px] px-12 py-36 container">
+        <section className="py-36 container">
           <section>
             <MyLineChart />
           </section>
@@ -53,6 +54,9 @@ export default function App() {
         <section className="lg:px-[120px] md:px-[70px] px-12 py-36 container">
           <section className="mt-52">
             <Contactt />
+          </section>
+          <section className="mt-52">
+            <Collaborate />
           </section>
         </section>
 

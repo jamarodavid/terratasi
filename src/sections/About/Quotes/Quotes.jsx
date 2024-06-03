@@ -14,13 +14,18 @@ const Quotes = () => {
 
   const textVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.75, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.75, ease: "easeOut" },
+    },
   };
 
   return (
     <section
       ref={ref}
       className="flex justify-center md:flex-row flex-col items-center md:gap-10 gap-5 text-color-1"
+      id="about"
     >
       <motion.h1
         className="font-lora font-bold text-4xl md:w-2/4 w-full max-md:text-center"

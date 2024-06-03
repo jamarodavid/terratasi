@@ -110,6 +110,7 @@ button:hover .text {
 .btn1::before {
     transform: scaleY(0);
     border-radius: 0;
+
 }
 
 .btn1:hover::before {

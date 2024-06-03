@@ -31,7 +31,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div id="contact">
       <section>
         <motion.p
           className="text-center font-poppins text-2xl text-color-1"
@@ -120,74 +120,73 @@ const Contact = () => {
           </div>
           <br />
           <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
-<motion.div
-  className="bg-[#82DF85] rounded-[1.62rem] md:w-full border-[3px] border-[#1D4735]"
-  variants={itemVariants}
->
-  <div className="flex justify-center gap-10 pt-4">
-    <a
-      href="https://github.com/RadityaRohman"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img
-        src="./src/assets/img/contact/github.png"
-        alt=""
-        className="w-[2rem]"
-      />
-    </a>
-    <a
-      href="https://www.instagram.com/raditya26._/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img
-        src="./src/assets/img/contact/instagram.png"
-        alt=""
-        className="w-[2rem]"
-      />
-    </a>
-    <a
-      href="https://www.linkedin.com/in/raditya-ananda-rohman-71b112262/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img
-        src="./src/assets/img/contact/linkedn.png"
-        alt=""
-        className="w-[2rem]"
-      />
-    </a>
-  </div>
-  <img
-    src="./src/assets/img/contact/kontakk.png"
-    className="w-full pt-4 "
-    alt=""
-  />
-</motion.div>
-<motion.div
-  className="col-span-1 xl:col-span-2 bg-[#82DF85] font-poppins rounded-[1.62rem] border-[3px] border-[#1D4735] text-color-3 p-4 flex flex-col justify-center"
-  variants={itemVariants}
->
-  <div className="">
-    <p className="font-bold text-[10px] md:text-lg  xl:text-3xl ">
-      Raditya Ananda Rohman
-    </p>
+            <motion.div
+              className="bg-[#82DF85] rounded-[1.62rem] md:w-full border-[3px] border-[#1D4735]"
+              variants={itemVariants}
+            >
+              <div className="flex justify-center gap-10 pt-4">
+                <a
+                  href="https://github.com/RadityaRohman"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./src/assets/img/contact/github.png"
+                    alt=""
+                    className="w-[2rem]"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/raditya26._/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./src/assets/img/contact/instagram.png"
+                    alt=""
+                    className="w-[2rem]"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/raditya-ananda-rohman-71b112262/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./src/assets/img/contact/linkedn.png"
+                    alt=""
+                    className="w-[2rem]"
+                  />
+                </a>
+              </div>
+              <img
+                src="./src/assets/img/contact/kontakk.png"
+                className="w-full pt-4 "
+                alt=""
+              />
+            </motion.div>
+            <motion.div
+              className="col-span-1 xl:col-span-2 bg-[#82DF85] font-poppins rounded-[1.62rem] border-[3px] border-[#1D4735] text-color-3 p-4 flex flex-col justify-center"
+              variants={itemVariants}
+            >
+              <div className="">
+                <p className="font-bold text-[10px] md:text-lg  xl:text-3xl ">
+                  Raditya Ananda Rohman
+                </p>
 
-    <p className="font-bold text-[10px] md:text-xs lg:text-lg xl:text-2xl ">
-      (Member)
-    </p>
-    <p className="font-medium text-[10px] md:text-xs lg:text-lg xl:text-xl">
-      Saya Raditya Ananda Rohman siswa SMK Negeri 69 Jakarta jurusan
-      SIJA (Sistem Informasi Jaringan dan Aplikasi). Sebagai seorang
-      siswa yang juga memiliki minat dalam bidang Front-End Website
-      Development. Bagi saya, menjadi seorang front end developer
-      adalah tentang menciptakan pengalaman yang menarik dan
-      interaktif bagi pengguna di berbagai platform web.
-    </p>
-  </div>
-</motion.div>
-
+                <p className="font-bold text-[10px] md:text-xs lg:text-lg xl:text-2xl ">
+                  (Member)
+                </p>
+                <p className="font-medium text-[10px] md:text-xs lg:text-lg xl:text-xl">
+                  Saya Raditya Ananda Rohman siswa SMK Negeri 69 Jakarta jurusan
+                  SIJA (Sistem Informasi Jaringan dan Aplikasi). Sebagai seorang
+                  siswa yang juga memiliki minat dalam bidang Front-End Website
+                  Development. Bagi saya, menjadi seorang front end developer
+                  adalah tentang menciptakan pengalaman yang menarik dan
+                  interaktif bagi pengguna di berbagai platform web.
+                </p>
+              </div>
+            </motion.div>
           </div>
         </motion.div>
         <motion.p

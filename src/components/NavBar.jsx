@@ -112,6 +112,7 @@ const NavBar = () => {
                     />
                   </svg>
                 </button>
+                {/* Dropdown */}
                 <div
                   id="dropdownNavbar"
                   className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"

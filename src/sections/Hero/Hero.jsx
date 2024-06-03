@@ -21,7 +21,7 @@ const Hero = () => {
 
   const imageVariants = {
     hidden: { opacity: 0, y: 80 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.90 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.9 } },
   };
 
   return (
@@ -40,8 +40,8 @@ const Hero = () => {
           className="md:text-5xl text-4xl text-center text-color-2 font-semibold mb-4 md:w-11/12 w-10/12"
           variants={textVariants}
         >
-          Mari Bersama-sama, Lestarikan Nusantara Satu Langkah Demi Kesejahteraan
-          Alam
+          Mari Bersama-sama, Lestarikan Nusantara Satu Langkah Demi
+          Kesejahteraan Alam
         </motion.h1>
         <motion.p
           className="md:text-base text-sm text-center text-color-2 leading-normal font-poppins mx-12 xl:mx-60 mb-3"

@@ -4,7 +4,6 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Faq = () => {
-  
   return (
     <div className="font-poppins">
       <div className="text-center text-color-1">
@@ -114,6 +113,7 @@ const Faq = () => {
           </div>
         </div>
       </div>
+      <span className="block outline-2 outline-dotted outline-[#636363] mt-10"></span>
     </div>
   );
 };
