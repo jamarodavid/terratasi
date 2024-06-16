@@ -2,6 +2,8 @@ import React from "react";
 import { faq } from "../../assets";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Dampak from "../dampak/Dampak";
+import Dampakk from "../dampak/Dampakk";
 
 const Faq = () => {
   return (
@@ -114,6 +116,10 @@ const Faq = () => {
         </div>
       </div>
       <span className="block outline-2 outline-dotted outline-[#636363] mt-10"></span>
+      <Dampak />
+      <div className="mt-4">
+      <Dampak />
+      </div>
     </div>
   );
 };

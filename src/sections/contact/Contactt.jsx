@@ -65,7 +65,7 @@ const Contactt = () => {
 						<p className="font-bold font-poppins text-[10px] text-color-3 md:text-[10px] xl:text-[16px]">
 							(Team Leader)
 						</p>
-						<p className="font-semibold font-poppins text-[8px] md:text-[11px] xl:text-[15px] text-color-3 ">
+						<p className="font-semibold font-poppins text-[7px] md:text-[11px] xl:text-[15px] text-color-3 ">
 							Saya Jamaro David Saragih, siswa SMKN 69 Jakarta, Jurusan SIJA
 							(Sistem Informatika Jaringan Aplikasi). Saya memiliki antusiasme
 							dalam teknologi informasi dan perangkat lunak. Menurut saya
@@ -129,7 +129,7 @@ const Contactt = () => {
 						<p className="font-bold font-poppins text-[10px] text-color-3 md:text-[10px] xl:text-[16px]">
 							(Member)
 						</p>
-						<p className="font-semibold font-poppins text-[8px] md:text-[11px] xl:text-[15px] text-color-3 ">
+						<p className="font-semibold font-poppins text-[7px] md:text-[11px] xl:text-[15px] text-color-3 ">
 							Saya Raditya Ananda Rohman siswa SMK Negeri 69 Jakarta jurusan
 							SIJA (Sistem Informasi Jaringan dan Aplikasi). Sebagai seorang
 							siswa yang memiliki minat dalam bidang Front-End Website
