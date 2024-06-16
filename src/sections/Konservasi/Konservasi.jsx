@@ -18,6 +18,7 @@ import { useInView } from "react-intersection-observer";
 const Konservasi = () => {
 	const controls = useAnimation();
 
+
 	const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
 	const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
 	const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });
@@ -173,6 +174,109 @@ const Konservasi = () => {
 			</svg>
 		</>
 	);
+      <div
+        className="bg-gradient-1 p-20 text-color-2 font-poppins"
+        id="konservasi"
+      >
+        <div className="flex justify-center items-center h-screen">
+          <h1 className="uppercase font-semibold lg:text-8xl md:text-6xl sm:text-5xl text-4xl text-center">
+            Konservasi Hijau
+          </h1>
+        </div>
+        <div className="flex md:flex-row flex-col justify-center">
+          <div className="relative">
+            <div className="sticky top-0 min-h-screen overflow-hidden flex space-x-4 w-full">
+              <div className="grid flex-shrink-0 grid-cols-1 gap-2">
+                <div className="h-[367px] w-44 overflow-hidden">
+                  <img
+                    src={konservasi1}
+                    className="h-full w-full object-cover object-center"
+                    alt="konservasi1"
+                  />
+                </div>
+                <div className="h-[367px] w-44 overflow-hidden">
+                  <img
+                    src={konservasi2}
+                    className="h-full w-full object-cover object-center"
+                    alt="konservasi2"
+                  />
+                </div>
+                <div className="h-[367px] w-44 overflow-hidden">
+                  <img
+                    src={konservasi3}
+                    className="h-full w-full object-cover object-center"
+                    alt="konservasi3"
+                  />
+                </div>
+              </div>
+              <div className="grid flex-shrink-0 grid-cols-1 gap-4">
+                <div className="h-[471px] w-72 overflow-hidden">
+                  <img
+                    src={konservasi4}
+                    className="h-full w-full object-cover object-center"
+                    alt="konservasi4"
+                  />
+                </div>
+                <div className="h-[471px] w-72 overflow-hidden">
+                  <img
+                    src={konservasi5}
+                    className="h-full w-full object-cover object-center"
+                    alt="konservasi5"
+                  />
+                </div>
+                <div className="h-[189px] w-72 overflow-hidden">
+                  <img
+                    src={konservasi6}
+                    className="h-full w-full object-cover object-center"
+                    alt="konservasi6"
+                  />
+                </div>
+              </div>
+              <div className="grid flex-shrink-0 grid-cols-1 gap-6">
+                <div className="h-[367px] w-44 overflow-hidden">
+                  <img
+                    src={konservasi7}
+                    className="h-full w-full object-cover object-center"
+                    alt="konservasi7"
+                  />
+                </div>
+                <div className="h-[367px] w-44 overflow-hidden">
+                  <img
+                    src={konservasi8}
+                    className="h-full w-full object-cover object-center"
+                    alt="konservasi8"
+                  />
+                </div>
+                <div className="h-[367px] w-44 overflow-hidden">
+                  <img
+                    src={konservasi9}
+                    className="h-full w-full object-cover object-center"
+                    alt="konservasi9"
+                  />
+                </div>
+              </div>
+            </div>
+            <Link
+              to={"/galeri"}
+              className="absolute -bottom-16 font-semibold underline hover:no-underline"
+            >
+              Galeri Hasil Barang Daur Ulang
+            </Link>
+          </div>
+          <div className="w-full lg:w-3/6 ps-5 max-md:mt-20">
+            <TextContent />
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#B7DF82"
+          fill-opacity="1"
+          d="M0,288L16,272C32,256,64,224,96,181.3C128,139,160,85,192,96C224,107,256,181,288,181.3C320,181,352,107,384,106.7C416,107,448,181,480,208C512,235,544,213,576,218.7C608,224,640,256,672,256C704,256,736,224,768,208C800,192,832,192,864,202.7C896,213,928,235,960,213.3C992,192,1024,128,1056,90.7C1088,53,1120,43,1152,48C1184,53,1216,75,1248,90.7C1280,107,1312,117,1344,122.7C1376,128,1408,128,1424,128L1440,128L1440,0L1424,0C1408,0,1376,0,1344,0C1312,0,1280,0,1248,0C1216,0,1184,0,1152,0C1120,0,1088,0,1056,0C1024,0,992,0,960,0C928,0,896,0,864,0C832,0,800,0,768,0C736,0,704,0,672,0C640,0,608,0,576,0C544,0,512,0,480,0C448,0,416,0,384,0C352,0,320,0,288,0C256,0,224,0,192,0C160,0,128,0,96,0C64,0,32,0,16,0L0,0Z"
+        ></path>
+      </svg>
+    </>
+  );
 };
 
 export default Konservasi;

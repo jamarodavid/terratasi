@@ -8,18 +8,19 @@ import Quotes from "./sections/About/Quotes/Quotes";
 import ReorderComponent from "./sections/About/Quotes/ReorderComponent";
 import VelocityScrollAnimation from "./sections/About/Quotes/VelocityScrollAnimation";
 import TrashTypes from "./sections/About/TrashTypes/TrashTypes";
+import Collaborate from "./sections/Collaborate/Collaborate";
+import Contact from "./sections/contact/Contact";
 import Contactt from "./sections/contact/Contactt";
 import Faq from "./sections/FAQ/Faq";
 import Hero from "./sections/Hero/Hero";
 import Konservasi from "./sections/Konservasi/Konservasi";
-
 
 export default function App() {
   return (
     <>
       <main className="relative">
         <NavBar />
-        <section className="mt-24 max-md:mt-16 md:px-[40px] lg:px-[120px] container">
+        <section className="mt-24 max-md:mt-16 md:px-[40px] lg:px-[120px]">
           <Hero />
         </section>
 
@@ -38,20 +39,24 @@ export default function App() {
         <section className="mt-52">
           <Impact />
         </section>
-        <section className="container pt-36">
+
+        <section className="py-36 container">
+          <section>
             <MyLineChart />
           </section>
 
-        <section className="lg:px-[120px] md:px-[70px] px-12 py-36 container">
-          
-          <section className="mt-52">
-            <Faq />
+          <section className="lg:px-[120px] md:px-[70px] px-12 py-36 container">
+            <section className="mt-52">
+              <Faq />
+            </section>
           </section>
         </section>
+        
         <section>
           {/* <ReorderComponent /> */}
-        {/* <VelocityScrollAnimation /> */}
+          {/* <VelocityScrollAnimation /> */}
         </section>
+
         <section className="mt-52">
           <Konservasi />
         </section>
@@ -59,6 +64,9 @@ export default function App() {
         <section className="lg:px-[120px] md:px-[70px] px-12 py-36 container">
           <section className="mt-52">
             <Contactt />
+          </section>
+          <section className="mt-52">
+            <Collaborate />
           </section>
         </section>
 

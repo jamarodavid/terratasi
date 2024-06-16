@@ -6,7 +6,6 @@ import Dampak from "../dampak/Dampak";
 import Dampakk from "../dampak/Dampakk";
 
 const Faq = () => {
-  
   return (
     <div className="font-poppins">
       <div className="text-center text-color-1">
@@ -119,7 +118,7 @@ const Faq = () => {
       <span className="block outline-2 outline-dotted outline-[#636363] mt-10"></span>
       <Dampak />
       <div className="mt-4">
-      <Dampakk />
+      <Dampak />
       </div>
     </div>
   );

@@ -9,6 +9,8 @@ import hero6 from "./img/hero/image-6.png";
 import hero7 from "./img/hero/image-7.png";
 import faq from "./img/faq.svg";
 
+import sixNine from "./img/69-logo.svg";
+
 import radit from "./img/contact/radit.png";
 import jamaro from "./img/contact/jamaro.png";
 
@@ -45,4 +47,5 @@ export {
   konservasi9,
   radit,
   jamaro,
+  sixNine,
 };
