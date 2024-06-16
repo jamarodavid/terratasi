@@ -12,6 +12,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import Count from "./Count";
 
 ChartJS.register(
   CategoryScale,
@@ -92,7 +93,7 @@ const MyLineChart = () => {
           animate={controls}
         >
           <span className="underline italic">
-            Rata-rata Timbulan Sampah di Indonesia 28.151.905
+            Rata-rata Timbulan Sampah di Indonesia <Count /> 
           </span>
           <br /> Dan masih Belum Di Kelola Dengan Baik
         </motion.div>

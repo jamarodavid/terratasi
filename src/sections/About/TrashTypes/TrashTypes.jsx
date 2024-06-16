@@ -71,7 +71,7 @@ export default function TrashTypes() {
                   alt="Sampah Organik"
                 />
               </div>
-              <p className="font-semibold md:text-4xl text-2xl text-center pb-5">
+              <p className="font-semibold md:text-3xl text-2xl text-center pb-5">
                 Sampah <br /> Organik
               </p>
             </motion.div>
@@ -89,7 +89,7 @@ export default function TrashTypes() {
                   className="w-[5/6] h-auto"
                 />
               </div>
-              <p className="font-semibold md:text-4xl text-2xl text-center">
+              <p className="font-semibold md:text-3xl text-2xl text-center">
                 Sampah <br /> Anorganik
               </p>
             </motion.div>

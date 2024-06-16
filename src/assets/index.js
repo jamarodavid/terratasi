@@ -12,6 +12,7 @@ import faq from "./img/faq.svg";
 import radit from "./img/contact/radit.png";
 import jamaro from "./img/contact/jamaro.png";
 
+
 import konservasi1 from "./img/konservasi/konservasi-1.png";
 import konservasi2 from "./img/konservasi/konservasi-2.png";
 import konservasi3 from "./img/konservasi/konservasi-3.png";
