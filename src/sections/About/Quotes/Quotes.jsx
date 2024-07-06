@@ -28,7 +28,7 @@ const Quotes = () => {
       id="about"
     >
       <motion.h1
-        className="font-lora font-bold text-4xl md:w-2/4 w-full max-md:text-center"
+        className="font-lora font-bold text-4xl md:w-2/4 w-full max-md:text-center bg-gradient-to-r from-gradient-2 to-gradient-1 inline-block text-transparent bg-clip-text"
         initial="hidden"
         animate={controls}
         variants={textVariants}
@@ -36,7 +36,7 @@ const Quotes = () => {
         "Satu Langkah Kecil Untuk Satu Perubahan Besar"
       </motion.h1>
       <motion.p
-        className="font-poppins md:w-2/4 w-full max-md:text-center"
+        className="font-poppins md:w-2/4 w-full max-md:text-center bg-gradient-to-br from-gradient-2 to-gradient-1  inline-block text-transparent bg-clip-text"
         initial="hidden"
         animate={controls}
         variants={textVariants}
