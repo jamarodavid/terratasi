@@ -45,6 +45,7 @@ export default {
       fontFamily: {
         poppins: "var(--font-poppins)",
         lora: "var(--font-lora)",
+        sixNine: "var(--font-2p)",
       },
       screens: {
         wide: "1440px",
