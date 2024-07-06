@@ -28,7 +28,7 @@ const Dampak = () => {
   };
 
   return (
-    <div className="py-11">
+    <div className="py-11 container">
       <div className="flex flex-col md:flex-row gap-8" ref={ref}>
         <div className="flex flex-col items-center gap-3 pt-2 md:w-1/2 w-full">
           <motion.img
@@ -77,13 +77,13 @@ const Dampak = () => {
               Apa dampak positif jika kita mendaur ulang sampah?
             </motion.p>
             <br />
-            Daur ulang sampah bisa menghasilkan uang dan menarik minat masyarakat
-            dengan menjual bahan daur ulang seperti kertas, plastik, dan logam ke
-            industri yang membutuhkannya. Usaha daur ulang juga menciptakan
-            peluang bisnis dan lapangan pekerjaan baru, seperti pengumpulan sampah
-            dan pabrik daur ulang. Selain itu, program daur ulang meningkatkan
-            kesadaran lingkungan dan partisipasi masyarakat, sambil memberikan
-            manfaat ekonomi nyata.
+            Daur ulang sampah bisa menghasilkan uang dan menarik minat
+            masyarakat dengan menjual bahan daur ulang seperti kertas, plastik,
+            dan logam ke industri yang membutuhkannya. Usaha daur ulang juga
+            menciptakan peluang bisnis dan lapangan pekerjaan baru, seperti
+            pengumpulan sampah dan pabrik daur ulang. Selain itu, program daur
+            ulang meningkatkan kesadaran lingkungan dan partisipasi masyarakat,
+            sambil memberikan manfaat ekonomi nyata.
           </p>
         </motion.div>
       </div>

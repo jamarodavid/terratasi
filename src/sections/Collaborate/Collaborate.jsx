@@ -20,15 +20,16 @@ const Collaborate = () => {
         }
       );
   };
+
   return (
     <>
       <div className="font-poppins">
-        <div className="md:text-6xl text-5xl max-sm:text-4xl text-center font-semibold text-color-1 mb-32">
+        <div className="md:text-6xl text-3xl sm:text-5xl text-center font-semibold text-color-1 mb-8">
           <h1>Let's Collaborate Together</h1>
           <span>{"</>"}</span>
         </div>
-        <div className="flex gap-10 max-md:flex-col justify-center items-center">
-          <div className="w-1/2">
+        <div className="flex gap-10 flex-col md:flex-row justify-center items-center">
+          <div className="w-full md:w-1/2 p-4">
             <form ref={form} onSubmit={sendEmail}>
               <label className="form-control w-full mb-4">
                 <div className="label">
@@ -59,7 +60,7 @@ const Collaborate = () => {
                   <span className="label-text text-color-1">Pesan</span>
                 </div>
                 <textarea
-                  class="textarea textarea-success"
+                  className="textarea textarea-success w-full"
                   placeholder="Masukan pesan anda di sini..."
                   required
                   name="message"
@@ -73,8 +74,8 @@ const Collaborate = () => {
               </button>
             </form>
           </div>
-          <div className="w-1/2 m-auto text-center">
-            <h1 className="font-sixNine text-[150px] text-color-1">
+          <div className="w-full md:w-1/2 flex justify-center p-4">
+            <h1 className="font-sixNine md:text-[150px] text-8xl text-color-1 text-center">
               <span className="md:font-outline-md font-outline">6</span>9
             </h1>
           </div>

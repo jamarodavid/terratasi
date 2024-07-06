@@ -17,7 +17,14 @@ const TextContent = () => {
     if (inViewSection2) controls.start("visible");
     if (inViewSection3) controls.start("visible");
     if (inViewSection4) controls.start("visible");
-  }, [controls, inViewHeader, inViewSection1, inViewSection2, inViewSection3, inViewSection4]);
+  }, [
+    controls,
+    inViewHeader,
+    inViewSection1,
+    inViewSection2,
+    inViewSection3,
+    inViewSection4,
+  ]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -39,7 +46,7 @@ const TextContent = () => {
   return (
     <div className="font-poppins">
       <motion.div
-        className="mb-6 lg:mb-10 p-4 lg:p-6 text-color-2 md:min-h-screen"
+        className="mb-6 lg:mb-10 lg:p-6 text-color-2"
         ref={refHeader}
         variants={containerVariants}
         initial="hidden"
@@ -70,7 +77,7 @@ const TextContent = () => {
       </motion.div>
 
       <motion.div
-        className="mb-6 lg:mb-10 p-4 lg:p-6 text-color-2 md:min-h-screen"
+        className="mb-6 lg:mb-10 lg:p-6 text-color-2"
         ref={refSection1}
         variants={containerVariants}
         initial="hidden"
@@ -96,7 +103,7 @@ const TextContent = () => {
       </motion.div>
 
       <motion.div
-        className="mb-6 lg:mb-10 p-4 lg:p-6 text-color-2 md:min-h-screen"
+        className="mb-6 lg:mb-10 lg:p-6 text-color-2"
         ref={refSection2}
         variants={containerVariants}
         initial="hidden"
@@ -126,7 +133,7 @@ const TextContent = () => {
       </motion.div>
 
       <motion.div
-        className="mb-6 lg:mb-10 p-4 lg:p-6 text-color-2 md:min-h-screen"
+        className="mb-6 lg:mb-10 lg:p-6 text-color-2"
         ref={refSection3}
         variants={containerVariants}
         initial="hidden"

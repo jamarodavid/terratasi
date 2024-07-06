@@ -67,10 +67,18 @@ export default function App() {
         </section>
 
         <section className="container">
-          <LeafDrawing />
-          <ChatBubble />
-          <Diff />
-          <Tabs />
+          <section>
+            <LeafDrawing />
+          </section>
+          <section>
+            <ChatBubble />
+          </section>
+          <section>
+            <Diff />
+          </section>
+          <section>
+            <Tabs />
+          </section>
         </section>
 
         <section className="mt-52">

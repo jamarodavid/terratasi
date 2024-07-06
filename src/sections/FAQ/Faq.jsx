@@ -27,7 +27,7 @@ const Faq = () => {
         </div>
         <span className="block outline-2 outline-dotted outline-[#636363] mt-10"></span>
       </div>
-      <div className="flex max-md:flex-col max-md:px-12 w-full mt-24">
+      <div className="flex max-md:flex-col max-md:px-4 w-full mt-24">
         <div className="w-2/6 max-md:w-full max-md:ms-4">
           <h1 className="font-medium">Pertanyaan</h1>
         </div>
