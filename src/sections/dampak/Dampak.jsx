@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
+import {koran1, koran2, koran3} from "../../assets";
 const Dampak = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.2 });
@@ -32,7 +32,7 @@ const Dampak = () => {
       <div className="flex flex-col md:flex-row gap-8" ref={ref}>
         <div className="flex flex-col items-center gap-3 pt-2 md:w-1/2 w-full">
           <motion.img
-            src="./src/assets/img/koran1.png"
+            src={koran1}
             className="w-full border-[3.5px] mr-4 border-color-1 rounded-2xl"
             alt="Koran 1"
             variants={imgVariants}
@@ -41,7 +41,7 @@ const Dampak = () => {
             transition={{ duration: 0.5 }}
           />
           <motion.img
-            src="./src/assets/img/koran2.png"
+            src={koran2}
             className="w-full ml-10 border-[3.5px] border-color-1 rounded-2xl"
             alt="Koran 2"
             variants={imgVariants}
@@ -50,7 +50,7 @@ const Dampak = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
           />
           <motion.img
-            src="./src/assets/img/koran3.png"
+            src={koran3}
             className="w-full border-[3.5px] mr-4 border-color-1 rounded-2xl"
             alt="Koran 3"
             variants={imgVariants}

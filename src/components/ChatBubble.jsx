@@ -2,7 +2,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { terratasi } from "../assets";
+import { terratasi, user } from "../assets";
+
 
 const ChatBubble = () => {
   const { ref: startRef, inView: startInView } = useInView({
@@ -40,7 +41,7 @@ const ChatBubble = () => {
       >
         <div className="chat-image avatar">
           <div className="w-10 rounded-full">
-            <img alt="User avatar" src="./src/assets/img/user.png" />
+            <img alt="User avatar" src={user}/>
           </div>
         </div>
         <div className="chat-header">User</div>

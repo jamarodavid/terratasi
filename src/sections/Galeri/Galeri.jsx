@@ -3,6 +3,18 @@ import "../../styleee.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import SimpleNavbar from "../../components/SimpleNavbar";
+import {
+  daurulang1,
+  daurulang10,
+  daurulang2,
+  daurulang3,
+  daurulang4,
+  daurulang5,
+  daurulang6,
+  daurulang7,
+  daurulang8,
+  daurulang9,
+} from "../../assets";
 
 const Galeri = () => {
   const { ref, inView } = useInView();
@@ -62,74 +74,34 @@ const Galeri = () => {
           animate={controls}
         >
           <motion.div variants={itemVariants} className="md:col-span-2">
-            <img
-              src="./src/assets/img/daurulang1.png"
-              className="gambar rounded-xl"
-              alt=""
-            />
+            <img src={daurulang1} className="gambar rounded-xl" alt="" />
           </motion.div>
           <motion.div variants={itemVariants}>
-            <img
-              src="./src/assets/img/daurulang2.png"
-              className="gambar rounded-xl"
-              alt=""
-            />
+            <img src={daurulang2} className="gambar rounded-xl" alt="" />
           </motion.div>
           <motion.div variants={itemVariants}>
-            <img
-              src="./src/assets/img/daurulang3.png"
-              className="gambar rounded-xl"
-              alt=""
-            />
+            <img src={daurulang3} className="gambar rounded-xl" alt="" />
           </motion.div>
           <motion.div variants={itemVariants}>
-            <img
-              src="./src/assets/img/daurulang4.png"
-              className="gambar rounded-xl"
-              alt=""
-            />
+            <img src={daurulang4} className="gambar rounded-xl" alt="" />
           </motion.div>
           <motion.div variants={itemVariants}>
-            <img
-              src="./src/assets/img/daurulang5.png"
-              className="gambar rounded-xl"
-              alt=""
-            />
+            <img src={daurulang5} className="gambar rounded-xl" alt="" />
           </motion.div>
           <motion.div variants={itemVariants}>
-            <img
-              src="./src/assets/img/daurulang6.png"
-              className="gambar rounded-xl"
-              alt=""
-            />
+            <img src={daurulang6} className="gambar rounded-xl" alt="" />
           </motion.div>
           <motion.div variants={itemVariants} className="md:col-span-2">
-            <img
-              src="./src/assets/img/daurulang7.png"
-              className="gambar rounded-xl"
-              alt=""
-            />
+            <img src={daurulang7} className="gambar rounded-xl" alt="" />
           </motion.div>
           <motion.div variants={itemVariants} className="md:col-span-3">
-            <img
-              src="./src/assets/img/daurulang8.png"
-              className="gambar rounded-xl"
-              alt=""
-            />
+            <img src={daurulang8} className="gambar rounded-xl" alt="" />
           </motion.div>
           <motion.div variants={itemVariants} className="md:col-span-2">
-            <img
-              src="./src/assets/img/daurulang9.png"
-              className="gambar rounded-xl"
-              alt=""
-            />
+            <img src={daurulang9} className="gambar rounded-xl" alt="" />
           </motion.div>
           <motion.div variants={itemVariants}>
-            <img
-              src="./src/assets/img/daurulang10.png"
-              className="gambar rounded-xl"
-              alt=""
-            />
+            <img src={daurulang10} className="gambar rounded-xl" alt="" />
           </motion.div>
         </motion.div>
       </section>

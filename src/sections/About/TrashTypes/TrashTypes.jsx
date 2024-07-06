@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { anorganik, organik ,bahan } from "../../../assets";
 
 export default function TrashTypes() {
   const navigate = useNavigate();
@@ -66,7 +67,7 @@ export default function TrashTypes() {
             >
               <div className="flex items-center justify-center">
                 <img
-                  src="./src/assets/img/organik.png"
+                  src={organik}
                   className="py-10"
                   alt="Sampah Organik"
                 />
@@ -84,7 +85,7 @@ export default function TrashTypes() {
             >
               <div className="flex items-center justify-center">
                 <img
-                  src="./src/assets/img/Anorganik.png"
+                  src={anorganik}
                   alt="Sampah Anorganik"
                   className="w-[5/6] h-auto"
                 />
@@ -101,7 +102,7 @@ export default function TrashTypes() {
               whileTap={{ scale: 0.95 }}
             >
               <div className="flex items-center justify-center">
-                <img src="./src/assets/img/bahan.png" alt="" />
+                <img src={bahan} alt="" />
               </div>
               <p className="font-semibold md:text-3xl text-xl text-center">
                 Bahan Berbahaya Dan Beracun (B3)

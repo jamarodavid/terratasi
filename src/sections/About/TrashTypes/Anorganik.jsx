@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import SimpleNavbar from "../../../components/SimpleNavbar";
 import Footer from "../../../components/Footer";
+import { anorganik2, organik2 ,bahan2 } from "../../../assets";
 
 const OrganikPage = () => {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ const OrganikPage = () => {
             </div>
             <div class="md:w-2/5">
               <img
-                src="./src/assets/img/anorganik2.png"
+                src={anorganik2}
                 class="w-full mt-2  hover:shadow-[12px_12px_0_0_#82DF85] rounded-[25px] transition-shadow"
                 alt=""
               />
@@ -46,7 +47,7 @@ const OrganikPage = () => {
           >
             <div>
               <img
-                src="./src/assets/img/organik2.png"
+                src={organik2}
                 class="w-full mt-2 rounded-[20px] "
                 alt=""
               />
@@ -61,7 +62,7 @@ const OrganikPage = () => {
           >
             <div>
               <img
-                src="./src/assets/img/bahan2.png"
+                src={bahan2}
                 class="w-full mt-2  rounded-[20px] "
                 alt=""
               />
