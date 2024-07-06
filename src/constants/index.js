@@ -15,7 +15,7 @@ export const navigation = [
     url: "#konservasi",
   },
   {
-    id: 2,
+    id: 3,
     title: "Contact",
     url: "#contact",
   },

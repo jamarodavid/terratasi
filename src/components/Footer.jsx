@@ -30,22 +30,22 @@ const Footer = () => {
                 <h2 class="mb-6 text-sm font-semibold text-black">Links</h2>
                 <ul class="text-black font-medium">
                   <li class="mb-4">
-                    <a href="#" class="hover:underline">
+                    <a href="#hero" class="hover:underline">
                       Home
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a href="#" class="hover:underline">
+                    <a href="#about" class="hover:underline">
                       About
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a href="#" class="hover:underline">
+                    <a href="#konservasi" class="hover:underline">
                       Konservasi
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="hover:underline">
+                    <a href="#contact" class="hover:underline">
                       Contact
                     </a>
                   </li>

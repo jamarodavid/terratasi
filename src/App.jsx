@@ -58,12 +58,14 @@ export default function App() {
             <div className="absolute -z-10 md:-right-80 -right-60 top mt-32 w-[320px] h-[320px] rounded-full bg-gradient-to-l from-amber-300 to-neutral-50"></div>
             <Faq />
           </section>
-          <section className="mt-52">
+          <section className="lg:px-[120px] md:px-[70px] px-12 py-36 container">
+          <section className="mt-52 ">
             <Dampak />
           </section>
-          <section className="mt-52">
+          <section className="mt-52 ">
             <Dampakk />
           </section>
+        </section>
         </section>
 
         <section className="container">

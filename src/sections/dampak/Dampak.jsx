@@ -28,7 +28,7 @@ const Dampak = () => {
   };
 
   return (
-    <div className="py-11 container">
+    <div className="py-11 ">
       <div className="flex flex-col md:flex-row gap-8" ref={ref}>
         <div className="flex flex-col items-center gap-3 pt-2 md:w-1/2 w-full">
           <motion.img

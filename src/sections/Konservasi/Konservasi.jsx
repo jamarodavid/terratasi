@@ -78,7 +78,10 @@ const Konservasi = () => {
         ></path>
       </svg>
 
-      <div className="bg-gradient-1 md:p-20 p-10 text-color-2 font-poppins">
+      <div
+        className="bg-gradient-1 md:p-20 p-10 text-color-2 font-poppins"
+        id="konservasi"
+      >
         <div className="flex justify-center items-center h-screen">
           <motion.h1
             className="uppercase font-semibold lg:text-8xl md:text-6xl sm:text-5xl text-4xl text-center"

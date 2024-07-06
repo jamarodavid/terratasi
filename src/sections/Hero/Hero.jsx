@@ -56,9 +56,9 @@ const Hero = () => {
             <span className="circle">
               <span className="icon arrow"></span>
             </span>
-            <span className="text font-poppins font-medium">
+            <a href="#about"><span className="text font-poppins font-medium">
               Lihat Selengkapnya
-            </span>
+            </span></a>
           </button>
         </motion.div>
       </motion.div>
