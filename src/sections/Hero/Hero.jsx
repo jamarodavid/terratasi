@@ -37,7 +37,7 @@ const Hero = () => {
         ref={ref}
       >
         <motion.h1
-          className="md:text-5xl text-4xl text-center text-color-2 font-semibold mb-4 md:w-11/12 w-10/12"
+          className="md:text-5xl text-4xl text-center font-lora text-color-2 font-semibold mb-4 md:w-11/12 w-10/12"
           variants={textVariants}
         >
           Mari Bersama-sama, Lestarikan Nusantara Satu Langkah Demi

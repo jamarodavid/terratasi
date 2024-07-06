@@ -118,7 +118,7 @@ const Faq = () => {
       <span className="block outline-2 outline-dotted outline-[#636363] mt-10"></span>
       <Dampak />
       <div className="mt-4">
-      <Dampak />
+      <Dampakk />
       </div>
     </div>
   );

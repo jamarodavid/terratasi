@@ -95,7 +95,7 @@ const MyLineChart = () => {
           <span className="underline italic">
             Rata-rata Timbulan Sampah di Indonesia <Count /> 
           </span>
-          <br /> Dan masih Belum Di Kelola Dengan Baik
+           Dan masih Belum Di Kelola Dengan Baik
         </motion.div>
       </p>
     </div>
