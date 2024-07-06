@@ -49,6 +49,9 @@ import koran3 from "./img/koran3.png";
 import tabs1 from "./img/Tabs1.jpeg";
 import tabs2 from "./img/Tabs2.jpeg";
 import tabs3 from "./img/Tabs3.jpeg";
+import github from "./img/contact/github.png";
+import linkedin from "./img/contact/linkedn.png";
+import instagram from "./img/contact/instagram.png"
 
 export {
   terratasi,
@@ -96,4 +99,8 @@ export {
   tabs1,
   tabs2,
   tabs3,
+  github,
+  instagram,
+  linkedin,
+
 };

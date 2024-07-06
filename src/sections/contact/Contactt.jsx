@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { jamaro, radit } from "../../assets";
+import { github, instagram, linkedin} from "../../assets";
 
 const Contactt = () => {
   const { ref, inView } = useInView();
@@ -84,7 +85,7 @@ const Contactt = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="./src/assets/img/contact/github.png"
+                  src={github}
                   alt=""
                   className="w-[1.5rem]"
                 />
@@ -95,7 +96,7 @@ const Contactt = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="./src/assets/img/contact/instagram.png"
+                  src={instagram}
                   alt=""
                   className="w-[1.5rem]"
                 />
@@ -106,7 +107,7 @@ const Contactt = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="./src/assets/img/contact/linkedn.png"
+                  src={linkedin}
                   alt=""
                   className="w-[1.5rem]"
                 />
@@ -151,7 +152,7 @@ const Contactt = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="./src/assets/img/contact/github.png"
+                  src={github}
                   alt=""
                   className="w-[1.5rem]"
                 />
@@ -162,7 +163,7 @@ const Contactt = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="./src/assets/img/contact/instagram.png"
+                  src={instagram}
                   alt=""
                   className="w-[1.5rem]"
                 />
@@ -173,7 +174,7 @@ const Contactt = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="./src/assets/img/contact/linkedn.png"
+                  src={linkedin}
                   alt=""
                   className="w-[1.5rem]"
                 />
