@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { jamaro, radit } from "../../assets";
-import { github, instagram, linkedin} from "../../assets";
+import { github, instagram, linkedin } from "../../assets";
 
 const Contactt = () => {
   const { ref, inView } = useInView();
@@ -34,7 +34,7 @@ const Contactt = () => {
   return (
     <>
       <motion.p
-        className="text-center  font-poppins text-2xl text-color-1"
+        className="text-center font-poppins text-2xl text-color-1"
         ref={ref}
         variants={containerVariants}
         initial="hidden"
@@ -45,13 +45,13 @@ const Contactt = () => {
       </motion.p>
       <br />
       <motion.div
-        className="border-[5px] rounded-xl border-[#82DF85] p-12 "
+        className="border-[5px] rounded-xl border-[#82DF85] md:p-8 p-3"
         ref={ref}
         variants={containerVariants}
         initial="hidden"
         animate={controls}
       >
-        <div className="flex flex-col md:flex-row  justify-center gap-4">
+        <div className="flex flex-col md:flex-row justify-center gap-4">
           <div>
             <motion.img
               src={jamaro}
@@ -70,7 +70,7 @@ const Contactt = () => {
             <p className="font-bold font-poppins text-[10px] text-color-3 md:text-[10px] xl:text-[16px]">
               (Team Leader)
             </p>
-            <p className="font-semibold font-poppins text-[7px] md:text-[11px] xl:text-[15px] text-color-3 ">
+            <p className="font-regular font-poppins text-[7px] md:text-[11px] xl:text-[15px] text-color-3 ">
               Saya Jamaro David Saragih, siswa SMKN 69 Jakarta, Jurusan SIJA
               (Sistem Informatika Jaringan Aplikasi). Saya memiliki antusiasme
               dalam teknologi informasi dan perangkat lunak. Menurut saya
@@ -79,38 +79,17 @@ const Contactt = () => {
               masyarakat.
             </p>
             <div className="flex gap-5 pt-2">
-              <a
-                href="https://github.com/jamarodavid"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={github}
-                  alt=""
-                  className="w-[1.5rem]"
-                />
+              <a href="https://github.com/jamarodavid" target="_blank">
+                <img src={github} alt="" className="w-[1.5rem]" />
               </a>
-              <a
-                href="https://www.instagram.com/jmrodvd/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={instagram}
-                  alt=""
-                  className="w-[1.5rem]"
-                />
+              <a href="https://www.instagram.com/jmrodvd/" target="_blank">
+                <img src={instagram} alt="" className="w-[1.5rem]" />
               </a>
               <a
                 href="https://www.linkedin.com/in/jamaro-david-saragih-244975178/"
                 target="_blank"
-                rel="noopener noreferrer"
               >
-                <img
-                  src={linkedin}
-                  alt=""
-                  className="w-[1.5rem]"
-                />
+                <img src={linkedin} alt="" className="w-[1.5rem]" />
               </a>
             </div>
           </motion.div>
@@ -137,7 +116,7 @@ const Contactt = () => {
             <p className="font-bold font-poppins text-[10px] text-color-3 md:text-[10px] xl:text-[16px]">
               (Member)
             </p>
-            <p className="font-semibold font-poppins text-[7px] md:text-[11px] xl:text-[15px] text-color-3 ">
+            <p className="font-regular font-poppins text-[7px] md:text-[11px] xl:text-[15px] text-color-3 ">
               Saya Raditya Ananda Rohman siswa SMK Negeri 69 Jakarta jurusan
               SIJA (Sistem Informasi Jaringan dan Aplikasi). Sebagai seorang
               siswa yang memiliki minat dalam bidang Front-End Website
@@ -151,33 +130,21 @@ const Contactt = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src={github}
-                  alt=""
-                  className="w-[1.5rem]"
-                />
+                <img src={github} alt="" className="w-[1.5rem]" />
               </a>
               <a
                 href="https://www.instagram.com/raditya26._/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src={instagram}
-                  alt=""
-                  className="w-[1.5rem]"
-                />
+                <img src={instagram} alt="" className="w-[1.5rem]" />
               </a>
               <a
                 href="https://www.linkedin.com/in/raditya-ananda-rohman-71b112262/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src={linkedin}
-                  alt=""
-                  className="w-[1.5rem]"
-                />
+                <img src={linkedin} alt="" className="w-[1.5rem]" />
               </a>
             </div>
           </motion.div>

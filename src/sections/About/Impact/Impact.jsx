@@ -2,7 +2,9 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Impact = () => {
-  const { ref, inView } = useInView();
+  const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
+  const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
+
   const textVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -22,7 +24,7 @@ const Impact = () => {
         ></path>
       </svg>
       <div
-        ref={ref}
+        ref={ref1}
         className="bg-gradient-1 lg:px-[120px] md:px-[70px] px-12 py-36 font-poppins text-center text-color-2"
         style={{ position: "relative" }}
       >
@@ -31,15 +33,15 @@ const Impact = () => {
             className="text-4xl font-semibold mb-4 w-full"
             variants={textVariants}
             initial="hidden"
-            animate={inView ? "visible" : "hidden"}
+            animate={inView1 ? "visible" : "hidden"}
           >
             Dampak Dari Pembuangan Sampah Sembarangan
           </motion.h1>
           <motion.p
-            className="text-base w-3/4 mb-4"
+            className="text-base mb-6"
             variants={textVariants}
             initial="hidden"
-            animate={inView ? "visible" : "hidden"}
+            animate={inView1 ? "visible" : "hidden"}
           >
             Indonesia memiliki kekayaan alam yang luar biasa, mulai dari pantai
             berpasir putih, hutan tropis yang rimbun, hingga gunung-gunung
@@ -47,7 +49,13 @@ const Impact = () => {
             masalah limbah sampah yang meningkat secara signifikan.
           </motion.p>
 
-          <motion.div className="flex w-full justify-center">
+          <motion.div
+            ref={ref2}
+            className="flex w-full justify-center"
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView2 ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+            transition={{ duration: 1.2 }}
+          >
             <iframe
               width="1125"
               height="571"
@@ -58,9 +66,6 @@ const Impact = () => {
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
               className="max-w-full h-[450px] w-[1125px] lg:h-[571px] rounded-2xl"
-              variants={textVariants}
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
             ></iframe>
           </motion.div>
         </div>
@@ -68,7 +73,7 @@ const Impact = () => {
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#B7DF82"
-          fill-opacity="1"
+          fillOpacity="1"
           d="M0,224L20,208C40,192,80,160,120,160C160,160,200,192,240,197.3C280,203,320,181,360,144C400,107,440,53,480,69.3C520,85,560,171,600,218.7C640,267,680,277,720,240C760,203,800,117,840,90.7C880,64,920,96,960,96C1000,96,1040,64,1080,74.7C1120,85,1160,139,1200,186.7C1240,235,1280,277,1320,272C1360,267,1400,213,1420,186.7L1440,160L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"
         ></path>
       </svg>

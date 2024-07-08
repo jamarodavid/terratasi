@@ -15,7 +15,6 @@
 
 html ::-webkit-scrollbar-track {
     background: transparent;
-
 }
 
 html ::-webkit-scrollbar-thumb {
@@ -36,6 +35,38 @@ html ::-webkit-scrollbar {
 * {
     scroll-behavior: smooth;
 }
+
+/* Base styles */
+.nav .nav-item {
+    @apply relative;
+}
+
+.nav .nav-item::after {
+    content: '';
+    @apply bg-color-1 h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-200;
+}
+
+/* Hover effect for devices >= 768px */
+@media screen and (min-width: 768px) {
+    .nav .nav-item:hover::after {
+        @apply w-[100%];
+    }
+}
+
+/* Disable hover effect for devices < 768px */
+@media screen and (max-width: 767px) {
+    .nav .nav-item::after {
+        @apply w-[0%];
+        /* Ensure it doesn't apply the hover width */
+    }
+
+    .nav .nav-item:hover::after {
+        @apply w-[0%];
+        /* Override hover effect */
+    }
+}
+
+
 
 @layer base {
     .font-outline-md {
@@ -76,17 +107,5 @@ html ::-webkit-scrollbar {
 
     .padding-b {
         @apply sm:pb-24 pb-12;
-    }
-
-    .nav .nav-item {
-        @apply relative;
-    }
-
-    .nav .nav-item::after {
-        @apply content-[''] bg-color-1 h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-200;
-    }
-
-    .nav .nav-item:hover::after {
-        @apply w-[100%];
     }
 }

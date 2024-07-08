@@ -43,23 +43,23 @@ const VelocityScroll = ({ children, baseVelocity = 100 }) => {
   return (
     <div className="parallax overflow-hidden whitespace-nowrap">
       <motion.div className="scroller flex text-color-1" style={{ x }}>
-        <span className="text-7xl md:text-8xl uppercase font-bold font-poppins">
-          {children}{" "}
+        <span className="text-5xl md:text-8xl uppercase font-bold font-poppins italic">
+          {`${children}.`}
         </span>
-        <span className="text-7xl md:text-8xl uppercase font-bold font-poppins">
-          {children}{" "}
+        <span className="text-5xl md:text-8xl uppercase font-bold font-poppins italic">
+          {`${children}.`}
         </span>
-        <span className="text-7xl md:text-8xl uppercase font-bold font-poppins">
-          {children}{" "}
+        <span className="text-5xl md:text-8xl uppercase font-bold font-poppins italic">
+          {`${children}.`}
         </span>
-        <span className="text-7xl md:text-8xl uppercase font-bold font-poppins">
-          {children}{" "}
+        <span className="text-5xl md:text-8xl uppercase font-bold font-poppins italic">
+          {`${children}.`}
         </span>
-        <span className="text-7xl md:text-8xl uppercase font-bold font-poppins">
-          {children}{" "}
+        <span className="text-5xl md:text-8xl uppercase font-bold font-poppins italic">
+          {`${children}.`}
         </span>
-        <span className="text-7xl md:text-8xl uppercase font-bold font-poppins">
-          {children}{" "}
+        <span className="text-5xl md:text-8xl uppercase font-bold font-poppins italic">
+          {`${children}.`}
         </span>
       </motion.div>
     </div>

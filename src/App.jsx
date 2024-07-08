@@ -59,13 +59,13 @@ export default function App() {
             <Faq />
           </section>
           <section className="lg:px-[120px] md:px-[70px] px-12 py-36 container">
-          <section className="mt-52 ">
-            <Dampak />
+            <section className="mt-52 ">
+              <Dampak />
+            </section>
+            <section className="mt-52 ">
+              <Dampakk />
+            </section>
           </section>
-          <section className="mt-52 ">
-            <Dampakk />
-          </section>
-        </section>
         </section>
 
         <section className="container">
@@ -83,9 +83,11 @@ export default function App() {
           </section>
         </section>
 
-        <section className="mt-52">
-          <VelocityScroll baseVelocity={-5}>TerraTasi</VelocityScroll>
-          <VelocityScroll baseVelocity={5}>Peduli Lingkungan</VelocityScroll>
+        <section className="mt-32">
+          <VelocityScroll baseVelocity={-3} className="absolute">
+            TerraTasi
+          </VelocityScroll>
+          <VelocityScroll baseVelocity={3}>Peduli Lingkungan</VelocityScroll>
         </section>
 
         <section className="mt-52">
@@ -95,7 +97,7 @@ export default function App() {
         <section className="lg:px-[120px] md:px-[70px] px-12 py-36 container">
           <section className="mt-52 relative">
             <div className="absolute -z-10 md:-left-90 -left-96 top-36 w-[440px] h-[440px] rounded-full bg-gradient-to-tr from-amber-300 to-neutral-50"></div>
-            <div className="absolute -z-10 md:-right-40 -right-60 w-[320px] h-[320px] rounded-full bg-gradient-to-l from-amber-300 to-neutral-50"></div>
+            <div className="absolute -z-10 md:-right-60 -right-60 w-[350px] h-[350px] rounded-full bg-gradient-to-l from-amber-300 to-neutral-50"></div>
             <Contactt />
           </section>
           <section className="mt-52">

@@ -1,0 +1,9 @@
+.collapse input:checked~.collapse-title {
+    color: #82DF85;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.collapse input:checked~.collapse-content {
+    color: #82DF85;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}

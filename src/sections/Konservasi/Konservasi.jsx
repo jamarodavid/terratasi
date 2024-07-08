@@ -33,7 +33,7 @@ const Konservasi = () => {
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.4,
+        delay: 0.1,
         when: "beforeChildren",
         staggerChildren: 0.1,
       },
@@ -221,7 +221,7 @@ const Konservasi = () => {
             </div>
             <Link
               to={"/galeri"}
-              className="absolute -bottom-16 font-semibold underline hover:no-underline"
+              className="absolute md:top-[1200px] max-md:-bottom-16 font-semibold underline hover:no-underline"
             >
               Galeri Hasil Barang Daur Ulang
             </Link>

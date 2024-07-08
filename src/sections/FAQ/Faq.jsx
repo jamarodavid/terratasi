@@ -1,9 +1,6 @@
 import React from "react";
 import { faq } from "../../assets";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import Dampak from "../dampak/Dampak";
-import Dampakk from "../dampak/Dampakk";
+import "./Faq.css"; // Tambahkan file CSS
 
 const Faq = () => {
   return (
@@ -33,10 +30,18 @@ const Faq = () => {
         </div>
         <div className="w-4/6 max-md:w-full">
           <div className="collapse collapse-plus">
-            <input type="radio" name="my-accordion-3" defaultChecked />
-            <div className="collapse-title text-xl font-medium">
+            <input
+              type="radio"
+              name="my-accordion-3"
+              defaultChecked
+              id="faq1"
+            />
+            <label
+              htmlFor="faq1"
+              className="collapse-title text-xl font-medium"
+            >
               Seberapa penting menjaga lingkungan?
-            </div>
+            </label>
             <div className="collapse-content">
               <ul className="list-decimal ps-4">
                 <li>
@@ -66,11 +71,14 @@ const Faq = () => {
             </div>
           </div>
           <div className="collapse collapse-plus">
-            <input type="radio" name="my-accordion-3" />
-            <div className="collapse-title text-xl font-medium">
+            <input type="radio" name="my-accordion-3" id="faq2" />
+            <label
+              htmlFor="faq2"
+              className="collapse-title text-xl font-medium"
+            >
               Apa yang menjadi penyebab utama masalah kebersihan lingkungan di
               Indonesia?
-            </div>
+            </label>
             <div className="collapse-content">
               <ul className="list-decimal ps-4">
                 <li>
@@ -98,11 +106,14 @@ const Faq = () => {
             </div>
           </div>
           <div className="collapse collapse-plus">
-            <input type="radio" name="my-accordion-3" />
-            <div className="collapse-title text-xl font-medium">
+            <input type="radio" name="my-accordion-3" id="faq3" />
+            <label
+              htmlFor="faq3"
+              className="collapse-title text-xl font-medium"
+            >
               Apa langkah-langkah yang dapat diambil untuk meningkatkan
               kebersihan lingkungan di Indonesia?
-            </div>
+            </label>
             <div className="collapse-content">
               <p>
                 Langkah - langkahnya antara lain adalah meningkatkan kesadaran
