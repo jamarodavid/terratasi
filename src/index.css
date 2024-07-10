@@ -1,111 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-    --font-poppins: "Poppins", sans-serif;
-    --font-lora: "Lora", serif;
-    --font-2p: "Press Start 2P", serif;
-    color-scheme: dark;
+	--font-poppins: "Poppins", sans-serif;
+	--font-lora: "Lora", serif;
+	--font-2p: "Press Start 2P", serif;
+}
+
+body {
+	background-color: #20242c;
 }
 
 html ::-webkit-scrollbar-track {
-    background: transparent;
+	background: transparent;
 }
 
 html ::-webkit-scrollbar-thumb {
-    background: #82DF85;
-    border-radius: 10px;
+	background: #82df85;
+	border-radius: 10px;
 }
 
 html ::-webkit-scrollbar {
-    width: 10px;
+	width: 10px;
 }
 
-
 *::selection {
-    background-color: #1D4735;
-    color: #82DF85;
+	background-color: #1d4735;
+	color: #82df85;
 }
 
 * {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 /* Base styles */
 .nav .nav-item {
-    @apply relative;
+	@apply relative;
 }
 
 .nav .nav-item::after {
-    content: '';
-    @apply bg-color-1 h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-200;
+	content: "";
+	@apply bg-color-1 h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute duration-200;
 }
 
 /* Hover effect for devices >= 768px */
 @media screen and (min-width: 768px) {
-    .nav .nav-item:hover::after {
-        @apply w-[100%];
-    }
+	.nav .nav-item:hover::after {
+		@apply w-[100%];
+	}
 }
 
 /* Disable hover effect for devices < 768px */
 @media screen and (max-width: 767px) {
-    .nav .nav-item::after {
-        @apply w-[0%];
-        /* Ensure it doesn't apply the hover width */
-    }
+	.nav .nav-item::after {
+		@apply w-[0%];
+		/* Ensure it doesn't apply the hover width */
+	}
 
-    .nav .nav-item:hover::after {
-        @apply w-[0%];
-        /* Override hover effect */
-    }
+	.nav .nav-item:hover::after {
+		@apply w-[0%];
+		/* Override hover effect */
+	}
 }
 
-
-
 @layer base {
-    .font-outline-md {
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 8px #82DF85;
-    }
+	.font-outline-md {
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 8px #82df85;
+	}
 
-    .font-outline {
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 4px #82DF85;
-    }
+	.font-outline {
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 4px #82df85;
+	}
 }
 
 @layer utilities {
-    .padding {
-        @apply sm:px-16 px-8 sm:py-24 py-12;
-    }
+	.padding {
+		@apply sm:px-16 px-8 sm:py-24 py-12;
+	}
 
-    .padding-x {
-        @apply sm:px-16 px-8;
-    }
+	.padding-x {
+		@apply sm:px-16 px-8;
+	}
 
-    .padding-y {
-        @apply sm:py-24 py-12;
-    }
+	.padding-y {
+		@apply sm:py-24 py-12;
+	}
 
-    .padding-l {
-        @apply sm:pl-16 pl-8;
-    }
+	.padding-l {
+		@apply sm:pl-16 pl-8;
+	}
 
-    .padding-r {
-        @apply sm:pr-16 pr-8;
-    }
+	.padding-r {
+		@apply sm:pr-16 pr-8;
+	}
 
-    .padding-t {
-        @apply sm:pt-24 pt-12;
-    }
+	.padding-t {
+		@apply sm:pt-24 pt-12;
+	}
 
-    .padding-b {
-        @apply sm:pb-24 pb-12;
-    }
+	.padding-b {
+		@apply sm:pb-24 pb-12;
+	}
 }
